@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a=1, b=0, c, fib=0;
+    cout << "Num - ";
+    cin >> c;
+    if (c == 0) {
+        cout << "0";
+    }
+    if (c == 1) {
+        cout << "1";
+    }
+    else {
+        cout << "0" << " " << "1" << " ";
+        while (c > fib) {
+            fib = a + b;
+            b = a;
+            a = fib;
+            if (fib < c) {
+                cout << fib << " ";
+            }
+        }
+    }
+}
+
